@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Página Personal</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+
+<head>
+    <style>
+        body {
+            background-color: #FAD7A0;
+        }
+    </style>
+</head>
+
+<body>
+    <div align="center">
+        <h1 style="background:yellow"> ASK </h1>
+    </div>
+    <br>
+    <div>
+
+        <div class="col text-center">
+            <img src="C:\Users\camila\Desktop\imaTarea.jpg" class="rounded float-left" alt="Responsive image"
+                width="200" height=" 200">
+        </div>
+        <div>
+            <ul style="color: black" align="initial">
+
+                <hr>
+                <li>
+                    <H2> Camila Muñoz Sandoval</H1>
+                </li>
+                <li>
+                    <Nombre:>c.munoz58@ufromail.cl</Nombre:>
+
+                </li>
+                <li>
+                    <Nombre:>Temuco.Chile</Nombre:>
+                </li>
+                <hr>
+            </ul>
+        </div>
+        <div align="right">
+            <div class="container-Area" background-color: #FFDE55>
+                <div class="row">
+                    <div class="col">
+                        <div id="formulario">
+                            <div>
+                                <div class="form-group">
+                                    <label for="nombreInput">Nombre</label>
+
+                                    <input type="nombre" id="nombreInput" row="10" cols="10" placeholder="nombre"
+                                        required>
+
+                                </div>
+                                <div class="form-group">
+                                    <label> mensaje</label>
+                                    <textarea name=mensaje rows="10" cols="50" id=mensajeImput></textarea>
+
+                                </div>
+                            </div>
+                            <button ondblclick="validarEntrada()">enviar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card" align="justify">
+            <div class="card-body">
+                
+            </div>
+        </div>
+    </div>
+    <div>
+
+
+
+    </div>
+    <script type="text/javascript">
+        function validarEntrada() {
+            var mensaje, nombre;
+            mensaje = document.getElementById("mensajeImput");
+            nombre = document.getElementById("nombreInput");
+            if (mensaje === "" || nombre === "") {
+                alert("todos los campos son obligatorios");
+                return false;
+            } else if (mensaje.length > 100) {
+                alert("el mensaje es demasiado largo");
+                return false;
+            }
+            document.getElementById("nombreInput")
+            document.getElementById("mensajeImput")
+                .innerHTML += "<div class='row'>";
+
+        }
+
+
+
+
+
+
+
+    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+        </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
